@@ -1,0 +1,32 @@
+{
+  "name": "typography",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run watch:css",
+    "build": "npm run build:compile && npm run build:minify",
+    "build:compile": "sass --style expanded --no-source-map ./scss/:./",
+    "build:minify": "cleancss -O2 --with-rebase -o main.min.css main.css",
+    "watch:css": "sass --watch ./scss:./ --style expanded --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zkreations/typography.git"
+  },
+  "keywords": [],
+  "author": "zkreations <daniel@zkreations.com> (https://zkreations.com/)",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/zkreations/typography/issues"
+  },
+  "homepage": "https://github.com/zkreations/typography#readme",
+  "devDependencies": {
+    "browserslist": "^4.24.4",
+    "clean-css-cli": "^5.6.3",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.83.4",
+    "stylelint": "^16.14.1",
+    "stylelint-config-standard-scss": "^13.1.0"
+  }
+}
