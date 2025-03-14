@@ -1,7 +1,7 @@
 {
   "name": "typography",
   "version": "1.0.0",
-  "description": "",
+  "description": "Enhance typography effortlessly for any vanilla HTML you can’t edit.",
   "main": "index.js",
   "scripts": {
     "dev": "npm run watch:css",
