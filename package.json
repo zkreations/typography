@@ -4,11 +4,13 @@
   "description": "Enhance typography effortlessly for any vanilla HTML you can’t edit.",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run watch:css",
+    "dev": "npm run watch:css &",
     "build": "npm run build:compile && npm run build:minify",
     "build:compile": "sass --style expanded --no-source-map ./scss/:./",
     "build:minify": "lightningcss --minify --bundle --targets \">= 0.25%\" main.css -o main.min.css",
-    "watch:css": "sass --watch ./scss:./ --style expanded --no-source-map"
+    "watch:css": "sass --watch ./scss:./ --style expanded --no-source-map",
+    "lint:css": "stylelint ./scss/**/*.scss --config .stylelintrc.json",
+    "lint:css:fix": "npm run lint:css -- --fix"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,7 @@
   },
   "homepage": "https://github.com/zkreations/typography#readme",
   "devDependencies": {
-    "lightningcss-cli": "^1.29.2",
+    "lightningcss-cli": "^1.29.3",
     "sass": "^1.85.1",
     "stylelint": "^16.16.0",
     "stylelint-config-standard-scss": "^14.0.0"
