@@ -1,8 +1,7 @@
-// _typography.scss
 @use "../abstracts/variables";
 
 .typography {
-  // Headings
+  // All headings
   :where(h1, h2, h3, h4, h5, h6) {
     margin-bottom: var(--typo-heading-spacing, variables.$heading-spacing);
     font-family: var(--typo-heading-family, variables.$heading-family);
@@ -11,10 +10,9 @@
   }
 
   // Individual headings
-  :where(h1) { font-size: var(--typo-heading-size-h1, variables.$heading-size-h1); }
-  :where(h2) { font-size: var(--typo-heading-size-h2, variables.$heading-size-h2); }
-  :where(h3) { font-size: var(--typo-heading-size-h3, variables.$heading-size-h3); }
-  :where(h4) { font-size: var(--typo-heading-size-h4, variables.$heading-size-h4); }
+  @each $heading, $size in variables.$heading-sizes {
+    :where(#{$heading}) { font-size: var(--typo-heading-size-#{$heading}, $size); }
+  }
 
   // Blockquote
   :where(blockquote) {
