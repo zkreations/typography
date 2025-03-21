@@ -1,0 +1,5 @@
+@use "../abstracts/variables";
+
+.typography {
+  line-height: var(--typo-line-height, variables.$line-height);
+}
