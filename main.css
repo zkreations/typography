@@ -1,0 +1,32 @@
+.typography :where(h1, h2, h3, h4, h5, h6) {
+  margin-bottom: var(--typo-heading-spacing, 1rem);
+  font-family: var(--typo-heading-family, "Arial", sans-serif);
+  color: var(--typo-heading-color, #333);
+  font-weight: var(--typo-heading-weight, 700);
+}
+.typography :where(h1) {
+  font-size: var(--typo-heading-size-h1, 2rem);
+}
+.typography :where(h2) {
+  font-size: var(--typo-heading-size-h2, 1.75rem);
+}
+.typography :where(h3) {
+  font-size: var(--typo-heading-size-h3, 1.5rem);
+}
+.typography :where(h4) {
+  font-size: var(--typo-heading-size-h4, 1.25rem);
+}
+.typography :where(blockquote) {
+  border-inline-start: 4px solid var(--typo-border-color, #ccc);
+  padding-inline-start: var(--typo-inline-spacing, 1.5rem);
+  position: relative;
+}
+.typography :where(ul, ol) {
+  padding-inline-start: var(--typo-inline-spacing, 1.5rem);
+}
+.typography :where(ul) {
+  list-style: disc;
+}
+.typography :where(ol) {
+  list-style: decimal;
+}

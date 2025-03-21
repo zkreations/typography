@@ -1,0 +1,33 @@
+// _typography.scss
+@use "../abstracts/variables";
+
+.typography {
+  // Headings
+  :where(h1, h2, h3, h4, h5, h6) {
+    margin-bottom: var(--typo-heading-spacing, variables.$heading-spacing);
+    font-family: var(--typo-heading-family, variables.$heading-family);
+    color: var(--typo-heading-color, variables.$heading-color);
+    font-weight: var(--typo-heading-weight, variables.$heading-weight);
+  }
+
+  // Individual headings
+  :where(h1) { font-size: var(--typo-heading-size-h1, variables.$heading-size-h1); }
+  :where(h2) { font-size: var(--typo-heading-size-h2, variables.$heading-size-h2); }
+  :where(h3) { font-size: var(--typo-heading-size-h3, variables.$heading-size-h3); }
+  :where(h4) { font-size: var(--typo-heading-size-h4, variables.$heading-size-h4); }
+
+  // Blockquote
+  :where(blockquote) {
+    border-inline-start: 4px solid var(--typo-border-color, variables.$border-color);
+    padding-inline-start: var(--typo-inline-spacing, variables.$inline-spacing);
+    position: relative;
+  }
+
+  // Lists
+  :where(ul, ol) {
+    padding-inline-start: var(--typo-inline-spacing, variables.$inline-spacing);
+  }
+
+  :where(ul) { list-style: disc; }
+  :where(ol) { list-style: decimal; }
+}
