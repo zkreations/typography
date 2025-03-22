@@ -3,14 +3,57 @@ $border-color: #ccc;
 $heading-color: #333;
 
 // Spacing
-$spacing: 1rem;
-$heading-spacing: 1rem;
+$spacing: 1.5rem;
 $inline-spacing: 1.5rem;
+$between-spacing: 0.5rem;
 
 // Typography
+$line-height: 1.75;
+
+// Headings
+$heading-spacing: 1rem;
 $heading-family: 'Arial', sans-serif;
-$heading-size-h1: 2rem;
-$heading-size-h2: 1.75rem;
-$heading-size-h3: 1.5rem;
-$heading-size-h4: 1.25rem;
 $heading-weight: 700;
+
+$heading-sizes: (
+  h1: 2.5rem,
+  h2: 2rem,
+  h3: 1.75rem,
+  h4: 1.5rem,
+  h5: 1.25rem,
+  h6: 1rem
+);
+
+// Paragraphs
+$drop-cap-lines: 3;
+
+// Font sizes
+$font-sizes: (
+  small: 0.875rem,
+  normal: 1rem,
+  medium: 1.25rem,
+  large: 1.5rem,
+  x-large: 2rem,
+  xx-large: 2.5rem
+);
+
+// Code
+$code-bg: #f4f4f4;
+$code-padding: 1.5rem;
+$code-font-size: 1rem;
+
+// Table
+$table-header-color: #212121;
+$table-cell-padding: .75rem;
+
+// Media
+$caption-spacing: 0.75rem;
+$caption-size: 0.875rem;
+
+// Spoiler
+$spoiler-padding: 1rem;
+$expand-text: 'Expand';
+$collapse-text: 'Collapse';
+
+// Columns
+$column-min: 200px;
