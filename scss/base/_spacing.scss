@@ -22,8 +22,7 @@
 
   // Grouping elements with the same margin-bottom
   // :where() is used to avoid specificitsy issues
-  :where(p, hr, figure, img, blockquote, ul, ol, pre, table, video, audio, iframe, details, div[class*=typo-]) {
-
+  :where(p, hr, figure, img, blockquote, ul, ol, pre, table, video, audio, iframe, details, div[class*="typo-"]) {
     // Ignore videos and audios with a class
     // Ignore the last element
     // Ignore figures and blockquotes with a last child

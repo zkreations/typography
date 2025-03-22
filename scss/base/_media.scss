@@ -25,7 +25,7 @@
   }
 
   // Videos
-  :where(iframe[src^=http], video) {
+  :where(iframe[src^="http"], video) {
     aspect-ratio: 16 / 9;
     width: 100%;
     height: auto;
