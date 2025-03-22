@@ -1,0 +1,32 @@
+@use "../abstracts/variables";
+
+.typo-spoiler {
+  padding: var(--typo-spoiler-padding, variables.$spoiler-padding);
+  border-top: 1px solid var(--typo-border-color, variables.$border-color);
+  border-bottom: 1px solid var(--typo-border-color, variables.$border-color);
+
+  summary {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--typo-between-spacing, variables.$between-spacing);
+    cursor: pointer;
+
+    &::after {
+      content: var(--typo-expand-text, variables.$expand-text);
+    }
+  }
+
+  &[open] > summary {
+    margin-bottom: var(--typo-spacing, variables.$spacing);
+
+    &::after {
+      content: var(--typo-collapse-text, variables.$collapse-text);
+    }
+  }
+
+  // Accordion mode
+  &[name]:has(+ &) {
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+}
