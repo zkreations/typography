@@ -1,0 +1,12 @@
+
+@use "../abstracts/variables";
+
+.typography {
+  // Images
+  :where(pre:has(>code)) {
+    background-color: var(--typo-code-bg, variables.$code-bg);
+    overflow-x: auto;
+    padding: var(--typo-code-padding, variables.$code-padding);
+    font-size: var(--typo-code-font-size, variables.$code-font-size);
+  }
+}
