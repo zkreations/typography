@@ -1,0 +1,13 @@
+@use "../abstracts/variables";
+
+.typo {
+  &-table {
+    overflow-x: auto;
+  }
+
+  &-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--typo-between-spacing, variables.$between-spacing);
+  }
+}
