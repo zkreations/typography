@@ -124,70 +124,70 @@
   gap: var(--typo-between-spacing, 0.5rem);
 }
 
-.has-drop-cap::first-letter {
+.typo-drop-cap::first-letter {
   margin-inline-end: 1em;
   initial-letter: var(--typo-drop-cap-lines, 3);
 }
-.has-small-font-size {
-  font-size: var(--typo-small-font-size, 0.875rem);
+.typo-text-small {
+  font-size: var(--typo-text-small, 0.875rem);
 }
-.has-normal-font-size {
-  font-size: var(--typo-normal-font-size, 1rem);
+.typo-text-normal {
+  font-size: var(--typo-text-normal, 1rem);
 }
-.has-medium-font-size {
-  font-size: var(--typo-medium-font-size, 1.25rem);
+.typo-text-medium {
+  font-size: var(--typo-text-medium, 1.25rem);
 }
-.has-large-font-size {
-  font-size: var(--typo-large-font-size, 1.5rem);
+.typo-text-large {
+  font-size: var(--typo-text-large, 1.5rem);
 }
-.has-x-large-font-size {
-  font-size: var(--typo-x-large-font-size, 2rem);
+.typo-text-x-large {
+  font-size: var(--typo-text-x-large, 2rem);
 }
-.has-xx-large-font-size {
-  font-size: var(--typo-xx-large-font-size, 2.5rem);
+.typo-text-xx-large {
+  font-size: var(--typo-text-xx-large, 2.5rem);
 }
-.has-fixed-layout {
+.typo-fixed-layout {
   table-layout: fixed;
   width: 100%;
 }
-.has-figure-left {
+.typo-figure-left {
   float: left;
   clear: left;
   margin-right: var(--typo-spacing, 1.5rem);
 }
-.has-figure-right {
+.typo-figure-right {
   float: right;
   clear: right;
   margin-left: var(--typo-spacing, 1.5rem);
 }
-.has-figure-center {
+.typo-figure-center {
   margin-left: auto;
   margin-right: auto;
   display: grid;
   place-content: center;
 }
-.has-figure-full {
+.typo-figure-full {
   width: 100%;
 }
-.has-text-left {
+.typo-text-left {
   text-align: left;
 }
-.has-text-right {
+.typo-text-right {
   text-align: right;
 }
-.has-text-center {
+.typo-text-center {
   text-align: center;
 }
-.has-text-justify {
+.typo-text-justify {
   text-align: justify;
 }
-.has-block-start {
+.typo-block-start {
   justify-content: start;
 }
-.has-block-end {
+.typo-block-end {
   justify-content: end;
 }
-.has-block-center {
+.typo-block-center {
   justify-content: center;
 }
 
