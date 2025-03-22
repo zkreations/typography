@@ -1,0 +1,21 @@
+@use "../abstracts/variables";
+
+.has {
+  // Typography
+  &-drop-cap::first-letter {
+    margin-inline-end: 1em;
+    initial-letter: var(--typo-drop-cap-lines, variables.$drop-cap-lines);
+  }
+
+  @each $size, $value in variables.$font-sizes {
+    &-#{$size}-font-size {
+      font-size: var(--typo-#{$size}-font-size, $value);
+    }
+  }
+
+  // Table
+  &-fixed-layout {
+    table-layout: fixed;
+    width: 100%;
+  }
+}
