@@ -1,6 +1,6 @@
 @use "../abstracts/variables";
 
-.has {
+.typo {
   // Typography
   &-drop-cap::first-letter {
     margin-inline-end: 1em;
@@ -8,8 +8,8 @@
   }
 
   @each $size, $value in variables.$font-sizes {
-    &-#{$size}-font-size {
-      font-size: var(--typo-#{$size}-font-size, $value);
+    &-text-#{$size} {
+      font-size: var(--typo-text-#{$size}, $value);
     }
   }
 
