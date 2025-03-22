@@ -10,6 +10,7 @@
     font-family: var(--typo-heading-family, variables.$heading-family);
     color: var(--typo-heading-color, variables.$heading-color);
     font-weight: var(--typo-heading-weight, variables.$heading-weight);
+    line-height: var(--typo-heading-line-height, variables.$heading-line-height);
   }
 
   // Individual headings

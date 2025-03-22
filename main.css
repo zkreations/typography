@@ -63,6 +63,7 @@
   font-family: var(--typo-heading-family, "Arial", sans-serif);
   color: var(--typo-heading-color, #333);
   font-weight: var(--typo-heading-weight, 700);
+  line-height: var(--typo-heading-line-height, 1.2);
 }
 .typography :where(h1) {
   font-size: var(--typo-heading-size-h1, 2.5rem);
