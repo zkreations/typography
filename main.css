@@ -1,3 +1,60 @@
+.typography * {
+  margin: 0;
+}
+.typography :where(hr) {
+  height: 0;
+  border-width: 0;
+  border-top: 1px solid var(--typo-border-color, #ccc);
+  margin-top: var(--typo-spacing, 1.5rem);
+}
+.typography :where(br):not(:where(p > *)) {
+  display: none;
+}
+.typography :where(p, hr, figure, img, blockquote, ul, ol, pre, table, video, audio, iframe, details, div[class*=typo-]):not(:where(video[class], audio[class], :last-child, :where(figure, blockquote) :last-of-type)) {
+  margin-bottom: var(--typo-spacing, 1.5rem);
+}
+
+.typography :where(pre:has(> code)) {
+  background-color: var(--typo-code-bg, #f4f4f4);
+  overflow-x: auto;
+  padding: var(--typo-code-padding, 1.5rem);
+  font-size: var(--typo-code-font-size, 1rem);
+}
+
+.typography :where(table) {
+  border-collapse: collapse;
+}
+.typography :where(table tr > th) {
+  color: var(--typo-table-header-color, #212121);
+}
+.typography :where(table tr > *) {
+  padding: var(--typo-table-cell-padding, 0.75rem);
+  border: 1px solid var(--typo-border-color, #ccc);
+  word-break: normal;
+}
+
+.typography :where(figure) {
+  position: relative;
+}
+.typography :where(figure) :where(figcaption) {
+  text-align: center;
+  margin-top: var(--typo-caption-spacing, 0.75rem);
+  font-size: var(--typo-caption-size, 0.875rem);
+}
+.typography :where(img, video, iframe) {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.typography :where(iframe[src^=http], video) {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+}
+
+.typography {
+  line-height: var(--typo-line-height, 1.75);
+}
 .typography :where(h1, h2, h3, h4, h5, h6) {
   margin-bottom: var(--typo-heading-spacing, 1rem);
   font-family: var(--typo-heading-family, "Arial", sans-serif);
@@ -5,16 +62,22 @@
   font-weight: var(--typo-heading-weight, 700);
 }
 .typography :where(h1) {
-  font-size: var(--typo-heading-size-h1, 2rem);
+  font-size: var(--typo-heading-size-h1, 2.5rem);
 }
 .typography :where(h2) {
-  font-size: var(--typo-heading-size-h2, 1.75rem);
+  font-size: var(--typo-heading-size-h2, 2rem);
 }
 .typography :where(h3) {
-  font-size: var(--typo-heading-size-h3, 1.5rem);
+  font-size: var(--typo-heading-size-h3, 1.75rem);
 }
 .typography :where(h4) {
-  font-size: var(--typo-heading-size-h4, 1.25rem);
+  font-size: var(--typo-heading-size-h4, 1.5rem);
+}
+.typography :where(h5) {
+  font-size: var(--typo-heading-size-h5, 1.25rem);
+}
+.typography :where(h6) {
+  font-size: var(--typo-heading-size-h6, 1rem);
 }
 .typography :where(blockquote) {
   border-inline-start: 4px solid var(--typo-border-color, #ccc);
@@ -29,4 +92,116 @@
 }
 .typography :where(ol) {
   list-style: decimal;
+}
+
+.typo-table {
+  overflow-x: auto;
+}
+.typo-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--typo-between-spacing, 0.5rem);
+}
+
+.has-drop-cap::first-letter {
+  margin-inline-end: 1em;
+  initial-letter: var(--typo-drop-cap-lines, 3);
+}
+.has-small-font-size {
+  font-size: var(--typo-small-font-size, 0.875rem);
+}
+.has-normal-font-size {
+  font-size: var(--typo-normal-font-size, 1rem);
+}
+.has-medium-font-size {
+  font-size: var(--typo-medium-font-size, 1.25rem);
+}
+.has-large-font-size {
+  font-size: var(--typo-large-font-size, 1.5rem);
+}
+.has-x-large-font-size {
+  font-size: var(--typo-x-large-font-size, 2rem);
+}
+.has-xx-large-font-size {
+  font-size: var(--typo-xx-large-font-size, 2.5rem);
+}
+.has-fixed-layout {
+  table-layout: fixed;
+  width: 100%;
+}
+.has-figure-left {
+  float: left;
+  clear: left;
+  margin-right: var(--typo-spacing, 1.5rem);
+}
+.has-figure-right {
+  float: right;
+  clear: right;
+  margin-left: var(--typo-spacing, 1.5rem);
+}
+.has-figure-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  place-content: center;
+}
+.has-figure-full {
+  width: 100%;
+}
+.has-text-left {
+  text-align: left;
+}
+.has-text-right {
+  text-align: right;
+}
+.has-text-center {
+  text-align: center;
+}
+.has-text-justify {
+  text-align: justify;
+}
+.has-block-start {
+  justify-content: start;
+}
+.has-block-end {
+  justify-content: end;
+}
+.has-block-center {
+  justify-content: center;
+}
+
+.typo-spoiler {
+  padding: var(--typo-spoiler-padding, 1rem);
+  border-top: 1px solid var(--typo-border-color, #ccc);
+  border-bottom: 1px solid var(--typo-border-color, #ccc);
+}
+.typo-spoiler summary {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--typo-between-spacing, 0.5rem);
+  cursor: pointer;
+}
+.typo-spoiler summary::after {
+  content: var(--typo-expand-text, "Expand");
+}
+.typo-spoiler[open] > summary {
+  margin-bottom: var(--typo-spacing, 1.5rem);
+}
+.typo-spoiler[open] > summary::after {
+  content: var(--typo-collapse-text, "Collapse");
+}
+.typo-spoiler[name]:has(+ .typo-spoiler) {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.typo-columns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--typo-spacing, 1.5rem);
+}
+.typo-columns > * {
+  flex: 1 1 var(--typo-column-min, 200px);
+  margin-bottom: 0;
 }

@@ -1,1 +1,10 @@
-@use "./base/typography"
+@use "base/spacing";
+@use "base/code";
+@use "base/table";
+@use "base/media";
+@use "base/typography";
+
+@use "components/containers";
+@use "components/modifiers";
+@use "components/spoiler";
+@use "components/columns";
