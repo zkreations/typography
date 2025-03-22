@@ -1,3 +1,4 @@
+@use "../abstracts/variables";
 
 .typography {
   // Images
@@ -6,8 +7,8 @@
 
     :where(figcaption) {
       text-align: center;
-      margin-top: 0.75rem;
-      font-size: .875rem;
+      margin-top: var(--typo-caption-spacing, variables.$caption-spacing);
+      font-size: var(--typo-caption-size, variables.$caption-size);
     }
   }
 
@@ -20,7 +21,7 @@
 
   // Videos
   :where(iframe[src^=http], video) {
-    aspect-ratio: 16/9;
+    aspect-ratio: 16 / 9;
     width: 100%;
     height: auto;
   }
