@@ -46,6 +46,9 @@
   max-width: 100%;
   height: auto;
 }
+.typography :where(audio) {
+  width: 100%;
+}
 .typography :where(iframe[src^=http], video) {
   aspect-ratio: 16/9;
   width: 100%;
