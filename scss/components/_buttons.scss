@@ -1,0 +1,19 @@
+@use "../abstracts/variables";
+
+.typo-button {
+  background-color: var(--typo-button-background, variables.$button-background);
+  padding: var(--typo-button-padding, variables.$button-padding);
+  color: var(--typo-button-color, variables.$button-color);
+  font-size: var(--typo-button-font-size, variables.$button-font-size);
+  border-radius: var(--typo-button-radius, variables.$button-radius);
+  column-gap: var(--typo-button-spacing, variables.$button-spacing);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover {
+    background-color: var(--typo-button-hover-background, variables.$button-hover-background);
+    color: var(--typo-button-hover-color, variables.$button-hover-color);
+  }
+}
