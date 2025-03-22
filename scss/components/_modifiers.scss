@@ -18,4 +18,50 @@
     table-layout: fixed;
     width: 100%;
   }
+
+  // Figure alignments
+  &-figure {
+    &-left {
+      float: left;
+      clear: left;
+      margin-right: var(--typo-spacing, variables.$spacing);
+    }
+
+    &-right {
+      float: right;
+      clear: right;
+      margin-left: var(--typo-spacing, variables.$spacing);
+    }
+
+    &-center {
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      place-content: center;
+    }
+
+    &-full {
+      width: 100%;
+    }
+  }
+
+  // Text alignment
+  &-text {
+    @each $alignment in (left, right, center, justify) {
+      &-#{$alignment} {
+        text-align: $alignment;
+      }
+    }
+  }
+
+  // Block alignment
+  &-block {
+    $alignments: start, end, center;
+
+    @each $alignment in $alignments {
+      &-#{$alignment} {
+        justify-content: $alignment;
+      }
+    }
+  }
 }
