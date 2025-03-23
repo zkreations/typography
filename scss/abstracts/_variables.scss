@@ -16,11 +16,11 @@ $heading-family: 'Arial', sans-serif;
 $heading-weight: 700;
 $heading-line-height: 1.2;
 $heading-sizes: (
-  h1: clamp(2rem, 5vw, 2.5rem),
-  h2: clamp(1.75rem, 4.5vw, 2rem),
-  h3: clamp(1.5rem, 4vw, 1.75rem),
-  h4: clamp(1.25rem, 3.5vw, 1.5rem),
-  h5: clamp(1rem, 3vw, 1.25rem),
+  h1: clamp(1.75rem, 5vw, 2.5rem),
+  h2: clamp(1.5rem, 4.5vw, 2rem),
+  h3: clamp(1.25rem, 4vw, 1.75rem),
+  h4: clamp(1.125rem, 3.25vw, 1.5rem),
+  h5: clamp(1rem, 2.75vw, 1.25rem),
   h6: clamp(0.875rem, 2.5vw, 1rem)
 );
 

@@ -66,19 +66,19 @@
   line-height: var(--typo-heading-line-height, 1.2);
 }
 .typography :where(h1) {
-  font-size: var(--typo-heading-size-h1, clamp(2rem, 5vw, 2.5rem));
+  font-size: var(--typo-heading-size-h1, clamp(1.75rem, 5vw, 2.5rem));
 }
 .typography :where(h2) {
-  font-size: var(--typo-heading-size-h2, clamp(1.75rem, 4.5vw, 2rem));
+  font-size: var(--typo-heading-size-h2, clamp(1.5rem, 4.5vw, 2rem));
 }
 .typography :where(h3) {
-  font-size: var(--typo-heading-size-h3, clamp(1.5rem, 4vw, 1.75rem));
+  font-size: var(--typo-heading-size-h3, clamp(1.25rem, 4vw, 1.75rem));
 }
 .typography :where(h4) {
-  font-size: var(--typo-heading-size-h4, clamp(1.25rem, 3.5vw, 1.5rem));
+  font-size: var(--typo-heading-size-h4, clamp(1.125rem, 3.25vw, 1.5rem));
 }
 .typography :where(h5) {
-  font-size: var(--typo-heading-size-h5, clamp(1rem, 3vw, 1.25rem));
+  font-size: var(--typo-heading-size-h5, clamp(1rem, 2.75vw, 1.25rem));
 }
 .typography :where(h6) {
   font-size: var(--typo-heading-size-h6, clamp(0.875rem, 2.5vw, 1rem));
