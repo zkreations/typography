@@ -106,6 +106,7 @@
   font-size: var(--typo-button-font-size, 0.875rem);
   border-radius: var(--typo-button-radius, 0.25rem);
   column-gap: var(--typo-button-spacing, 0.5rem);
+  box-shadow: 0 0 0 var(--this-border, 0px) var(--typo-button-border-color, #0a0a0a) inset;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -114,6 +115,18 @@
 .typo-button:hover {
   background-color: var(--typo-button-hover-background, #404040);
   color: var(--typo-button-hover-color, white);
+  --typo-button-border-color: transparent;
+}
+.typo-button-accent {
+  --typo-button-background: var(--typo-accent, #00bba7);
+  --typo-button-hover-background: var(--typo-accent-hover, #009689);
+  --typo-button-border-color: var(--typo-accent, #00bba7);
+  --typo-button-hover-border-color: var(--typo-accent-hover, #009689);
+}
+.typo-button-outline {
+  --typo-button-background: transparent;
+  --typo-button-color: var(--typo-button-border-color, variables.$button-border-color);
+  --this-border: 1px;
 }
 
 .typo-table {
