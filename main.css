@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .typography * {
   margin: 0;
   box-sizing: border-box;
@@ -106,27 +107,20 @@
   font-size: var(--typo-button-font-size, 0.875rem);
   border-radius: var(--typo-button-radius, 0.25rem);
   column-gap: var(--typo-button-spacing, 0.5rem);
-  box-shadow: 0 0 0 var(--this-border, 0px) var(--typo-button-border-color, #0a0a0a) inset;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 }
+.typo-button-outline {
+  background-color: transparent;
+  color: var(--typo-button-background, #0a0a0a);
+  box-shadow: 0 0 0 1px currentColor inset;
+}
 .typo-button:hover {
   background-color: var(--typo-button-hover-background, #404040);
   color: var(--typo-button-hover-color, white);
-  --typo-button-border-color: transparent;
-}
-.typo-button-accent {
-  --typo-button-background: var(--typo-accent, #00bba7);
-  --typo-button-hover-background: var(--typo-accent-hover, #009689);
-  --typo-button-border-color: var(--typo-accent, #00bba7);
-  --typo-button-hover-border-color: var(--typo-accent-hover, #009689);
-}
-.typo-button-outline {
-  --typo-button-background: transparent;
-  --typo-button-color: var(--typo-button-border-color, variables.$button-border-color);
-  --this-border: 1px;
+  box-shadow: none;
 }
 
 .typo-table {
@@ -225,13 +219,13 @@
   cursor: pointer;
 }
 .typo-spoiler summary::after {
-  content: var(--typo-expand-text, "Expand");
+  content: var(--typo-expand-text, "+");
 }
 .typo-spoiler[open] > summary {
   margin-bottom: var(--typo-spacing, 1.5rem);
 }
 .typo-spoiler[open] > summary::after {
-  content: var(--typo-collapse-text, "Collapse");
+  content: var(--typo-collapse-text, "−");
 }
 .typo-spoiler[name]:has(+ .typo-spoiler) {
   margin-bottom: 0;

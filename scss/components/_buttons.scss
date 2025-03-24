@@ -7,28 +7,20 @@
   font-size: var(--typo-button-font-size, variables.$button-font-size);
   border-radius: var(--typo-button-radius, variables.$button-radius);
   column-gap: var(--typo-button-spacing, variables.$button-spacing);
-  box-shadow: 0 0 0 var(--this-border, 0px) var(--typo-button-border-color, variables.$button-border-color) inset;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 
+  &-outline {
+    background-color: transparent;
+    color: var(--typo-button-background, variables.$button-background);
+    box-shadow: 0 0 0 1px currentColor inset;
+  }
+
   &:hover {
     background-color: var(--typo-button-hover-background, variables.$button-hover-background);
     color: var(--typo-button-hover-color, variables.$button-hover-color);
-    --typo-button-border-color: transparent;
-  }
-
-  &-accent {
-    --typo-button-background: var(--typo-accent, #{variables.$accent});
-    --typo-button-hover-background: var(--typo-accent-hover, #{variables.$accent-hover});
-    --typo-button-border-color: var(--typo-accent, #{variables.$accent});
-    --typo-button-hover-border-color: var(--typo-accent-hover, #{variables.$accent-hover});
-  }
-
-  &-outline {
-    --typo-button-background: transparent;
-    --typo-button-color: var(--typo-button-border-color, variables.$button-border-color);
-    --this-border: 1px;
+    box-shadow: none;
   }
 }
