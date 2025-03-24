@@ -8,8 +8,6 @@
 
   > * {
     flex: 1 1 var(--typo-column-min, variables.$column-min);
-
-    // Child elements should not have margin
     margin-bottom: 0;
   }
 }
