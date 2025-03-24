@@ -185,12 +185,18 @@
 }
 .typo-block-start {
   justify-content: start;
+  align-items: start;
 }
 .typo-block-end {
   justify-content: end;
+  align-items: end;
 }
 .typo-block-center {
   justify-content: center;
+  align-items: center;
+}
+.typo-block-column {
+  flex-direction: column;
 }
 
 .typo-spoiler {

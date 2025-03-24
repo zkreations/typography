@@ -61,7 +61,12 @@
     @each $alignment in $alignments {
       &-#{$alignment} {
         justify-content: $alignment;
+        align-items: $alignment;
       }
+    }
+
+    &-column {
+      flex-direction: column;
     }
   }
 }
