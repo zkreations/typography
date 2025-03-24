@@ -8,6 +8,8 @@
   &-buttons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
     gap: var(--typo-between-spacing, variables.$between-spacing);
   }
 }

@@ -99,10 +99,10 @@
 }
 
 .typo-button {
-  background-color: var(--typo-button-background, #007bff);
-  padding: var(--typo-button-padding, 0.5rem 1rem);
+  background-color: var(--typo-button-background, #0a0a0a);
+  padding: var(--typo-button-padding, 0.5rem 1.25rem);
   color: var(--typo-button-color, white);
-  font-size: var(--typo-button-font-size, 1rem);
+  font-size: var(--typo-button-font-size, 0.875rem);
   border-radius: var(--typo-button-radius, 0.25rem);
   column-gap: var(--typo-button-spacing, 0.5rem);
   display: inline-flex;
@@ -111,7 +111,7 @@
   text-decoration: none;
 }
 .typo-button:hover {
-  background-color: var(--typo-button-hover-background, #0056b3);
+  background-color: var(--typo-button-hover-background, #404040);
   color: var(--typo-button-hover-color, white);
 }
 
@@ -121,6 +121,8 @@
 .typo-buttons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
   gap: var(--typo-between-spacing, 0.5rem);
 }
 
