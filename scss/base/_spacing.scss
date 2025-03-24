@@ -4,6 +4,7 @@
   // Normalize margins
   * {
     margin: 0;
+    box-sizing: border-box;
   }
 
   :where(hr) {

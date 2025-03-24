@@ -1,5 +1,6 @@
 .typography * {
   margin: 0;
+  box-sizing: border-box;
 }
 .typography :where(hr) {
   height: 0;
