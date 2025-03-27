@@ -65,7 +65,7 @@
   font-family: var(--typo-heading-family, "Arial", sans-serif);
   color: var(--typo-heading-color, #333);
   font-weight: var(--typo-heading-weight, 700);
-  line-height: var(--typo-heading-line-height, 1.2);
+  line-height: var(--typo-heading-line-height, 1.5);
 }
 .typography :where(h1) {
   font-size: var(--typo-heading-size-h1, clamp(1.75rem, 5vw, 2.25rem));
@@ -136,7 +136,7 @@
 
 .typo-drop-cap::first-letter {
   margin-inline-end: 1em;
-  initial-letter: var(--typo-drop-cap-lines, 3);
+  initial-letter: var(--typo-initial-letter, 3);
 }
 .typo-text-small {
   font-size: var(--typo-text-small, 0.875rem);
@@ -161,14 +161,14 @@
   width: 100%;
 }
 .typo-figure-left {
-  float: left;
-  clear: left;
-  margin-right: var(--typo-spacing, 1.5rem);
+  float: inline-start;
+  clear: inline-start;
+  margin-inline-end: var(--typo-spacing, 1.5rem);
 }
 .typo-figure-right {
-  float: right;
-  clear: right;
-  margin-left: var(--typo-spacing, 1.5rem);
+  float: inline-end;
+  clear: inline-end;
+  margin-inline-start: var(--typo-spacing, 1.5rem);
 }
 .typo-figure-center {
   margin-left: auto;

@@ -14,7 +14,7 @@ $line-height: 1.75;
 $heading-spacing: 1rem;
 $heading-family: 'Arial', sans-serif;
 $heading-weight: 700;
-$heading-line-height: 1.2;
+$heading-line-height: 1.5;
 $heading-sizes: (
   h1: clamp(1.75rem, 5vw, 2.25rem),
   h2: clamp(1.5rem, 4.25vw, 1.875rem),
@@ -25,7 +25,7 @@ $heading-sizes: (
 );
 
 // Paragraphs
-$drop-cap-lines: 3;
+$initial-letter: 3;
 
 // Font sizes
 $font-sizes: (

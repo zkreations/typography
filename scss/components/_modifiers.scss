@@ -4,7 +4,7 @@
   // Typography
   &-drop-cap::first-letter {
     margin-inline-end: 1em;
-    initial-letter: var(--typo-drop-cap-lines, variables.$drop-cap-lines);
+    initial-letter: var(--typo-initial-letter, variables.$initial-letter);
   }
 
   @each $size, $value in variables.$font-sizes {
@@ -22,15 +22,15 @@
   // Figure alignments
   &-figure {
     &-left {
-      float: left;
-      clear: left;
-      margin-right: var(--typo-spacing, variables.$spacing);
+      float: inline-start;
+      clear: inline-start;
+      margin-inline-end: var(--typo-spacing, variables.$spacing);
     }
 
     &-right {
-      float: right;
-      clear: right;
-      margin-left: var(--typo-spacing, variables.$spacing);
+      float: inline-end;
+      clear: inline-end;
+      margin-inline-start: var(--typo-spacing, variables.$spacing);
     }
 
     &-center {
