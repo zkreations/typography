@@ -15,7 +15,7 @@
   &-outline {
     background-color: transparent;
     color: var(--typo-button-background, variables.$button-background);
-    box-shadow: 0 0 0 1px currentColor inset;
+    box-shadow: 0 0 0 1px currentcolor inset;
   }
 
   &:hover {

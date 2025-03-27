@@ -115,7 +115,7 @@
 .typo-button-outline {
   background-color: transparent;
   color: var(--typo-button-background, #0a0a0a);
-  box-shadow: 0 0 0 1px currentColor inset;
+  box-shadow: 0 0 0 1px currentcolor inset;
 }
 .typo-button:hover {
   background-color: var(--typo-button-hover-background, #404040);
