@@ -221,10 +221,10 @@
 .typo-spoiler :where(summary)::after {
   content: var(--typo-expand-text, "+");
 }
-.typo-spoiler:where([open] > summary) {
+.typo-spoiler:where([open]) > :where(summary) {
   margin-bottom: var(--typo-spacing, 1.5rem);
 }
-.typo-spoiler:where([open] > summary)::after {
+.typo-spoiler:where([open]) > :where(summary)::after {
   content: var(--typo-collapse-text, "−");
 }
 .typo-spoiler:where([name]:has(+ .typo-spoiler)) {
