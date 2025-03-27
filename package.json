@@ -1,5 +1,5 @@
 {
-  "name": "typography",
+  "name": "@zkreations/typography",
   "version": "1.0.0",
   "description": "Enhance typography effortlessly for any vanilla HTML you can’t edit.",
   "main": "index.js",
