@@ -16,6 +16,10 @@
     height: 100%;
   }
 
+  figure {
+    position: relative;
+  }
+
   figcaption {
     background: var(--typo-gallery-caption-background, variables.$gallery-caption-background);
     color: var(--typo-gallery-caption-color, variables.$gallery-caption-color);

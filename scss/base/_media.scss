@@ -1,9 +1,8 @@
 @use "../abstracts/variables";
 
 .typography {
-  // Images
   figure {
-    position: relative;
+     width: max-content;
   }
 
   figcaption {
@@ -13,7 +12,7 @@
   }
 
   // Images, videos, and iframes can be responsive
-  :where(img, video, iframe) {
+  :where(img, video, iframe, figure) {
     display: block;
     max-width: 100%;
     height: auto;
