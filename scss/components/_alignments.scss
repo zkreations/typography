@@ -1,0 +1,26 @@
+@use "../abstracts/variables";
+
+.typo-align {
+  &-left {
+    float: inline-start;
+    clear: inline-start;
+    margin-inline-end: var(--typo-spacing);
+  }
+
+  &-right {
+    float: inline-end;
+    clear: inline-end;
+    margin-inline-start: var(--typo-spacing);
+  }
+
+  &-center {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    place-content: center;
+  }
+
+  &-full {
+    width: 100%;
+  }
+}

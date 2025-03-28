@@ -1,0 +1,7 @@
+@use "../abstracts/variables";
+
+:root {
+  --typo-spacing: #{variables.$spacing};
+  --typo-inline-spacing: #{variables.$inline-spacing};
+  --typo-border-color: #{variables.$border-color};
+}

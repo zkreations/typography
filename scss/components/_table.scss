@@ -1,0 +1,10 @@
+.typo {
+  &-table {
+    overflow-x: auto;
+  }
+
+  &-table-fixed {
+    table-layout: fixed;
+    width: 100%;
+  }
+}

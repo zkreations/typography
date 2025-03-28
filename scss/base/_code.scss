@@ -5,8 +5,9 @@
   // Images
   :where(pre:has(>code)) {
     background-color: var(--typo-code-background, variables.$code-background);
-    overflow-x: auto;
     padding: var(--typo-code-padding, variables.$code-padding);
     font-size: var(--typo-code-font-size, variables.$code-font-size);
+    color: var(--typo-code-color, variables.$code-color);
+    overflow-x: auto;
   }
 }

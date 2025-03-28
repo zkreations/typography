@@ -1,0 +1,13 @@
+@use "../abstracts/variables";
+
+.typography {
+  // All headings
+  :where(h1, h2, h3, h4, h5, h6) {
+    margin-bottom: variables.$heading-spacing;
+  }
+
+  // Individual headings
+  @each $heading, $size in variables.$heading-sizes {
+    :where(#{$heading}) { font-size: var(--typo-heading-size-#{$heading}, $size); }
+  }
+}

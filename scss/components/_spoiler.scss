@@ -1,14 +1,14 @@
 @use "../abstracts/variables";
 
 .typo-spoiler {
-  padding: var(--typo-spoiler-padding, variables.$spoiler-padding);
-  border-top: 1px solid var(--typo-border-color, variables.$border-color);
-  border-bottom: 1px solid var(--typo-border-color, variables.$border-color);
+  padding: variables.$spoiler-padding;
+  border-top: 1px solid var(--typo-border-color);
+  border-bottom: 1px solid var(--typo-border-color);
 
   :where(summary) {
     display: flex;
     justify-content: space-between;
-    gap: var(--typo-between-spacing, variables.$between-spacing);
+    align-items: center;
     cursor: pointer;
 
     &::after {
@@ -17,7 +17,7 @@
   }
 
   &:where([open]) > :where(summary) {
-    margin-bottom: var(--typo-spacing, variables.$spacing);
+    margin-bottom: var(--typo-spacing);
 
     &::after {
       content: var(--typo-collapse-text, variables.$collapse-text);

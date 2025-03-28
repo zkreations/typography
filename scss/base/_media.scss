@@ -7,8 +7,8 @@
 
     :where(figcaption) {
       text-align: center;
-      margin-top: var(--typo-caption-spacing, variables.$caption-spacing);
-      font-size: var(--typo-caption-size, variables.$caption-size);
+      margin-top: variables.$caption-spacing;
+      font-size: variables.$caption-size;
     }
   }
 
@@ -25,7 +25,7 @@
   }
 
   // Videos
-  :where(iframe[src^="http"], video) {
+  :where(iframe[src*=vimeo i],iframe[src*=youtube i], video) {
     aspect-ratio: 16 / 9;
     width: 100%;
     height: auto;

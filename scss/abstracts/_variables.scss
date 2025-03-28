@@ -1,20 +1,12 @@
 // Colors
 $border-color: #ccc;
-$heading-color: #333;
 
 // Spacing
 $spacing: 1.5rem;
 $inline-spacing: 1.5rem;
-$between-spacing: 0.5rem;
-
-// Typography
-$line-height: 1.75;
 
 // Headings
 $heading-spacing: 1rem;
-$heading-family: 'Arial', sans-serif;
-$heading-weight: 700;
-$heading-line-height: 1.5;
 $heading-sizes: (
   h1: clamp(1.75rem, 5vw, 2.25rem),
   h2: clamp(1.5rem, 4.25vw, 1.875rem),
@@ -27,23 +19,13 @@ $heading-sizes: (
 // Paragraphs
 $initial-letter: 3;
 
-// Font sizes
-$font-sizes: (
-  small: 0.875rem,
-  normal: 1rem,
-  medium: 1.25rem,
-  large: 1.5rem,
-  x-large: 2rem,
-  xx-large: 2.5rem
-);
-
 // Code
-$code-background: #f4f4f4;
+$code-background: #2a2833;
+$code-color: white;
 $code-padding: 1.5rem;
 $code-font-size: 1rem;
 
 // Table
-$table-header-color: #212121;
 $table-cell-padding: .75rem;
 
 // Media
@@ -52,8 +34,8 @@ $caption-size: 0.875rem;
 
 // Spoiler
 $spoiler-padding: 1rem;
-$expand-text: '\002B';
-$collapse-text: '\2212';
+$expand-text: 'Expand';
+$collapse-text: 'Collapse';
 
 // Columns
 $column-min: 200px;
@@ -64,13 +46,3 @@ $gallery-min: 200px;
 $gallery-caption-background: linear-gradient(transparent, #0006);
 $gallery-caption-color: white;
 $gallery-caption-padding: 0.75rem;
-
-// Buttons
-$button-background: #0a0a0a;
-$button-hover-background: #404040;
-$button-padding: 0.5rem 1.25rem;
-$button-color: white;
-$button-hover-color: white;
-$button-font-size: .875rem;
-$button-radius: 0.25rem;
-$button-spacing: 0.5rem;
