@@ -2,14 +2,14 @@
 
 .typography {
   // Images
-  :where(figure) {
+  figure {
     position: relative;
+  }
 
-    :where(figcaption) {
-      text-align: center;
-      margin-top: variables.$caption-spacing;
-      font-size: variables.$caption-size;
-    }
+  figcaption {
+    text-align: center;
+    margin-top: variables.$caption-spacing;
+    font-size: variables.$caption-size;
   }
 
   // Images, videos, and iframes can be responsive
@@ -20,12 +20,12 @@
   }
 
   // Audio
-  :where(audio) {
+  audio {
     width: 100%;
   }
 
   // Videos
-  :where(iframe[src*=vimeo i],iframe[src*=youtube i], video) {
+  :where(iframe[src*=vimeo i], iframe[src*=youtube i], video) {
     aspect-ratio: 16 / 9;
     width: 100%;
     height: auto;

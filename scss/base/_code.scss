@@ -3,7 +3,7 @@
 
 .typography {
   // Images
-  :where(pre:has(>code)) {
+  pre:has(>code) {
     background-color: var(--typo-code-background, variables.$code-background);
     padding: var(--typo-code-padding, variables.$code-padding);
     font-size: var(--typo-code-font-size, variables.$code-font-size);

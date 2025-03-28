@@ -5,22 +5,21 @@
     box-sizing: border-box;
   }
 
-  :where(hr) {
+  hr {
     height: 0;
     border-width: 0;
     border-top: 1px solid var(--typo-border-color);
     margin-top: var(--typo-spacing);
   }
 
-  :where(br) {
+  br {
     // Do not remove line breaks in paragraphs
-    &:not(:where(p > *)) {
+    &:not(p > *) {
       display: none;
     }
   }
 
   // Grouping elements with the same margin-bottom
-  // :where() is used to avoid specificitsy issues
   :where(p, hr, figure, img, blockquote, ul, ol, pre, table, video, audio, iframe, details, div[class*=typo-]) {
     // Ignore videos and audios with a class
     // Ignore the last element

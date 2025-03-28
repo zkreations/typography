@@ -10,13 +10,13 @@
     margin-bottom: 0;
   }
 
-  :where(img) {
+  img {
     object-fit: cover;
     width: 100%;
     height: 100%;
   }
 
-  :where(figcaption) {
+  figcaption {
     background: var(--typo-gallery-caption-background, variables.$gallery-caption-background);
     color: var(--typo-gallery-caption-color, variables.$gallery-caption-color);
     padding: var(--typo-gallery-caption-padding, variables.$gallery-caption-padding);

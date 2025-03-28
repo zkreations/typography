@@ -2,18 +2,18 @@
 
 .typography {
   // Table
-  :where(table) {
+  table {
     border-collapse: collapse;
-  }
 
-  :where(table tr > *) {
-    padding: variables.$table-cell-padding;
-    border: 1px solid var(--typo-border-color);
-    word-break: normal
+    tr > * {
+      padding: variables.$table-cell-padding;
+      border: 1px solid var(--typo-border-color);
+      word-break: normal
+    }
   }
 
   // Blockquote
-  :where(blockquote) {
+  blockquote {
     border-inline-start: 4px solid var(--typo-border-color);
     padding-inline-start: var(--typo-inline-spacing);
   }
@@ -23,6 +23,6 @@
     padding-inline-start: var(--typo-inline-spacing);
   }
 
-  :where(ul) { list-style: disc; }
-  :where(ol) { list-style: decimal; }
+  ul { list-style: disc; }
+  ol { list-style: decimal; }
 }
