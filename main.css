@@ -14,7 +14,7 @@
   border-top: 1px solid var(--typo-border-color);
   margin-top: var(--typo-spacing);
 }
-.typography br:not(p > *) {
+.typography br:not(p > br) {
   display: none;
 }
 .typography :where(p, hr, figure, img, blockquote, ul, ol, pre, table, video, audio, iframe, details, div[class*=typo-]):not(:where(video[class], audio[class], :last-child, :where(figure, blockquote) :last-of-type)) {

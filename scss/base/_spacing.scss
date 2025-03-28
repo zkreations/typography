@@ -12,11 +12,9 @@
     margin-top: var(--typo-spacing);
   }
 
-  br {
-    // Do not remove line breaks in paragraphs
-    &:not(p > *) {
-      display: none;
-    }
+  // Do not remove line breaks in paragraphs
+  br:not(p > br) {
+    display: none;
   }
 
   // Grouping elements with the same margin-bottom
