@@ -2,7 +2,7 @@
 
 ![J](https://img.shields.io/jsdelivr/npm/hm/@zkreations/typography?color=68D391) ![V](https://img.shields.io/npm/v/@zkreations/typography) ![L](https://img.shields.io/npm/l/@zkreations/typography)
 
-**Typography** is a project designed to style basic text elements in HTML. It is especially useful in cases where you have no control over the generated HTML and cannot add classes directly.
+**Typography** is a project designed to style basic text elements in HTML. It is especially useful in cases where you have no control over the generated HTML and cannot add classes directly. [Live Demo →](https://zkreations.github.io/typography/)
 
 ## Features
 
