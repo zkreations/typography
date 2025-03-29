@@ -2,7 +2,12 @@
   "name": "@zkreations/typography",
   "version": "1.0.0",
   "description": "Enhance typography effortlessly for any vanilla HTML you can’t edit.",
-  "main": "index.js",
+  "files": [
+    "scss/**/*.scss",
+    "main.css",
+    "main.min.css"
+  ],
+  "main": "main.min.css",
   "scripts": {
     "dev": "run-p watch:css serve",
     "build": "run-s build:compile build:minify",
