@@ -1,13 +1,11 @@
 
-@use "../abstracts/variables";
-
 .typography {
   // Images
-  pre:has(>code) {
-    background-color: var(--typo-code-background, variables.$code-background);
-    padding: var(--typo-code-padding, variables.$code-padding);
-    font-size: var(--typo-code-font-size, variables.$code-font-size);
-    color: var(--typo-code-color, variables.$code-color);
+  :where(pre:has(>code)) {
+    border-inline-start: 3px solid var(--typo-border-color);
+    background-color: var(--typo-code-background);
+    padding: var(--typo-code-padding);
+    font-size: 1rem;
     overflow-x: auto;
   }
 }

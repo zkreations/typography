@@ -1,28 +1,26 @@
-@use "../abstracts/variables";
-
 .typography {
   // Table
-  table {
+  :where(table) {
     border-collapse: collapse;
+  }
 
-    tr > * {
-      padding: variables.$table-cell-padding;
-      border: 1px solid var(--typo-border-color);
-      word-break: normal
-    }
+  :where(tr > *) {
+    padding: var(--typo-table-cell-padding);
+    border: 1px solid var(--typo-border-color);
+    word-break: normal
   }
 
   // Blockquote
-  blockquote {
-    border-inline-start: 4px solid var(--typo-border-color);
-    padding-inline-start: var(--typo-inline-spacing);
+  :where(blockquote) {
+    border-inline-start: 3px solid var(--typo-border-color);
+    padding-inline-start: var(--typo-spacing);
   }
 
   // Lists
   :where(ul, ol) {
-    padding-inline-start: var(--typo-inline-spacing);
+    padding-inline-start: var(--typo-spacing);
   }
 
-  ul { list-style: disc; }
-  ol { list-style: decimal; }
+  :where(ul) { list-style-type: square; }
+  :where(ol) { list-style-type: decimal; }
 }

@@ -1,31 +1,29 @@
-@use "../abstracts/variables";
-
 .typo-spoiler {
-  padding: variables.$spoiler-padding;
+  padding: var(--typo-spoiler-padding);
   border-top: 1px solid var(--typo-border-color);
   border-bottom: 1px solid var(--typo-border-color);
 
-  summary {
+  :where(summary) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
 
     &::after {
-      content: var(--typo-expand-text, variables.$expand-text);
+      content: var(--typo-spoiler-expand-text);
     }
   }
 
-  &[open] > summary {
+  &:where([open]) > :where(summary) {
     margin-bottom: var(--typo-spacing);
 
     &::after {
-      content: var(--typo-collapse-text, variables.$collapse-text);
+      content: var(--typo-spoiler-collapse-text);
     }
   }
 
   // Accordion mode
-  &[name]:has(+ &) {
+  &:where([name]):where(:has(+ &)) {
     margin-bottom: 0;
     border-bottom: 0;
   }

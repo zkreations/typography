@@ -1,8 +1,6 @@
-@use "../abstracts/variables";
-
 .typo-drop-cap {
   &::first-letter {
     margin-inline-end: 1em;
-    initial-letter: var(--typo-initial-letter, variables.$initial-letter);
+    initial-letter: var(--typo-initial-letter);
   }
 }

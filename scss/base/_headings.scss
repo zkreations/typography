@@ -1,13 +1,14 @@
-@use "../abstracts/variables";
-
 .typography {
   // All headings
   :where(h1, h2, h3, h4, h5, h6) {
-    margin-bottom: variables.$heading-spacing;
+    margin-bottom: var(--typo-heading-spacing);
   }
 
   // Individual headings
-  @each $heading, $size in variables.$heading-sizes {
-    #{$heading} { font-size: $size; }
-  }
+  :where(h1) { font-size: clamp(1.75rem, 5vw, 2.25rem) }
+  :where(h2) { font-size: clamp(1.5rem, 4.25vw, 1.875rem) }
+  :where(h3) { font-size: clamp(1.25rem, 3.75vw, 1.625rem) }
+  :where(h4) { font-size: clamp(1.125rem, 3.25vw, 1.375rem) }
+  :where(h5) { font-size: clamp(1rem, 2.75vw, 1.25rem) }
+  :where(h6) { font-size: clamp(0.875rem, 2.5vw, 1.125rem) }
 }

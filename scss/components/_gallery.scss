@@ -1,29 +1,27 @@
-@use "../abstracts/variables";
-
 .typo-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--typo-gallery-spacing, variables.$gallery-spacing);
+  gap: var(--typo-gallery-spacing);
 
   > * {
-    flex: 1 1 var(--typo-gallery-min, variables.$gallery-min);
+    flex: 1 1 var(--typo-gallery-min);
     margin-bottom: 0;
   }
 
-  img {
+  :where(img) {
     object-fit: cover;
     width: 100%;
     height: 100%;
   }
 
-  figure {
+  :where(figure) {
     position: relative;
   }
 
-  figcaption {
-    background: var(--typo-gallery-caption-background, variables.$gallery-caption-background);
-    color: var(--typo-gallery-caption-color, variables.$gallery-caption-color);
-    padding: var(--typo-gallery-caption-padding, variables.$gallery-caption-padding);
+  :where(figcaption) {
+    background: var(--typo-gallery-caption-background);
+    color: var(--typo-gallery-caption-color);
+    padding: var(--typo-gallery-caption-padding);
     position: absolute;
     inset: auto 0 0;
   }

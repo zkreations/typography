@@ -1,7 +1,22 @@
-@use "../abstracts/variables";
-
-:root {
-  --typo-spacing: #{variables.$spacing};
-  --typo-inline-spacing: #{variables.$inline-spacing};
-  --typo-border-color: #{variables.$border-color};
+@layer typography {
+  :root {
+    --typo-border-color: #d4d4d4;
+    --typo-caption-size: 0.875rem;
+    --typo-caption-spacing: 0.75rem;
+    --typo-code-background: #f5f5f5;
+    --typo-code-padding: 1rem;
+    --typo-column-min: 200px;
+    --typo-gallery-caption-background: linear-gradient(#0000, #0006);
+    --typo-gallery-caption-color: white;
+    --typo-gallery-caption-padding: 0.75rem;
+    --typo-gallery-min: 200px;
+    --typo-gallery-spacing: 2px;
+    --typo-heading-spacing: 1rem;
+    --typo-initial-letter: 3;
+    --typo-spacing: 1.5rem;
+    --typo-spoiler-collapse-text: 'Collapse';
+    --typo-spoiler-expand-text: 'Expand';
+    --typo-spoiler-padding: 1rem;
+    --typo-table-cell-padding: .5rem;
+  }
 }

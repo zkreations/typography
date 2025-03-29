@@ -1,14 +1,12 @@
-@use "../abstracts/variables";
-
 .typography {
-  figure {
+  :where(figure) {
      width: max-content;
   }
 
-  figcaption {
+  :where(figcaption) {
     text-align: center;
-    margin-top: variables.$caption-spacing;
-    font-size: variables.$caption-size;
+    margin-top: var(--typo-caption-spacing);
+    font-size: var(--typo-caption-size);
   }
 
   // Images, videos, and iframes can be responsive
@@ -19,7 +17,7 @@
   }
 
   // Audio
-  audio {
+  :where(audio) {
     width: 100%;
   }
 
