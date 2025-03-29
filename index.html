@@ -5,39 +5,199 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Typography</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@zkreations/typography@1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@zkreations/typography@1.0.1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <style>
-    *,
-    ::after,
-    ::before {
-      box-sizing: border-box;
-    }
-
-    body {
-      background-color: white;
-      font-size: 1.05rem;
-      line-height: 1.5;
-    }
-
-    article {
-      max-width: 700px;
-      width: 100%;
-      margin: 0 auto;
-      line-height: 1.75;
-    }
-
-    /*Overrides*/
-    .typography :where(h1, h2, h3, h4, h5, h6) {
-      color: #000;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
+  <link href="./favicon.png" rel="icon" type="image/png">
 </head>
 
 <body>
-  <article class="typography">
+  <header class="header">
+    <div class="header-content container">
+      <h1 class="title">Enhancing Readability and Aesthetics</h1>
+      <div class="header-meta">
+        <a class="author" href="https://zkreations.com" target="_blank" rel="noopener noreferrer">
+          <img src="assets/avatar.png" alt="author">
+          <div class="author-meta flex-column">
+            <span>zkreations</span>
+            <time>March 29 · 10 min read</time>
+          </div>
+        </a>
+        <a class="btn" href="https://github.com/zkreations/typography" target="_blank" rel="noopener noreferrer">
+          <svg class="i i-github" viewBox="0 0 24 24">
+            <path d="M9 22v-3q0-2 1-3A7 6.5 0 0 1 5 5Q4 3 5 1q3 0 4 2 3.5-1 7 0 1-2 4-2 1 2 0 4a7 6.5 0 0 1-5 11q1 1 1 3v3m-7-3c-4 1-4-2-7-3"></path>
+          </svg> View on Github
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <article class="typography">
+      <p>Typography plays a crucial role in shaping the reading experience on the web. Whether you’re crafting an in-depth article, a blog post, or an editorial piece, the way you structure and style text impacts readability, engagement, and visual appeal. Let's explore some fundamental elements of typography and how they contribute to an engaging reading experience.</p>
 
-  </article>
+      <h2>Paragraphs: The Backbone of Content</h2>
+
+      <p>A well-structured article relies on paragraphs. These blocks of text help readers navigate through the content logically and cohesively:</p>
+
+      <blockquote>Paragraphs use the <code>&lt;p></code> tag to create a block of text.</blockquote>
+
+      <p>Paragraphs break information into digestible sections, making it easier for users to scan and absorb key points.</p>
+
+      <h2>Making an Impact with Drop Caps</h2>
+
+      <p class="typo-drop-cap">Drop caps add a touch of elegance to an article by enlarging the first letter of a paragraph. Traditionally seen in print media, they bring a sense of sophistication and style to digital content as well:</p>
+
+      <blockquote>They are created using the <code>.typo-drop-cap</code> class in the <code>&lt;p></code> tag.</blockquote>
+
+      <h2>Adding Depth with Blockquotes</h2>
+
+      <p>Sometimes, a single statement deserves extra attention. Blockquotes help highlight key takeaways:</p>
+
+      <blockquote>"Good typography is invisible. Bad typography is everywhere." — Somebody Wise</blockquote>
+
+      <p>A well-placed blockquote enhances readability and adds credibility to an article.</p>
+
+      <h2>Organizing Information with Lists</h2>
+
+      <p>Lists make content easy to digest, whether presenting items in order or grouping related concepts:</p>
+
+      <h5>Unordered List:</h5>
+      <ul>
+        <li>Bullet points simplify complex ideas.</li>
+        <li>They improve readability.</li>
+        <li>They make scanning easier.</li>
+      </ul>
+
+      <h5>Ordered List:</h5>
+      <ol>
+        <li>Step-by-step guides become clearer.</li>
+        <li>Readers follow a logical sequence.</li>
+        <li>Instructions remain structured.</li>
+      </ol>
+
+      <h2>Displaying Code Snippets</h2>
+
+      <p>For technical content, displaying code in a readable format is essential. The <code>&lt;pre></code> and <code>&lt;code></code> tags ensure proper indentation and styling:</p>
+
+      <pre><code>&lt;div class="typography">
+    &lt;h1>Heading&lt;/h1>
+    &lt;p>This is a paragraph...&lt;/p>
+  &lt;/div></code></pre>
+
+      <p>This format makes it easier for developers to copy and understand the code. Remember to be careful with spaces, as they are interpreted in this block.</p>
+
+      <h2>Presenting Data with Tables</h2>
+      <p>Tables are a great way to present data clearly and concisely. They help organize information into rows and columns, making it easy to compare values:</p>
+
+      <div class="typo-table">
+        <table class="typo-table-fixed">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Apples</td>
+              <td>$1.00</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Bananas</td>
+              <td>$0.50</td>
+              <td>20</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <blockquote>Tables are not responsive elements. Use the class <code>.typo-table</code> to fix this.</blockquote>
+
+      <h2>Spoilers and Accordions: Revealing Content Selectively</h2>
+      <p>Sometimes, you want to hide content until the reader is ready to see it. Spoilers and accordions are great for this:</p>
+
+      <details class="typo-spoiler">
+        <summary>Click to reveal the spoiler</summary>
+        <p>This is a spoiler content that can be revealed by clicking the summary.</p>
+      </details>
+
+      <p>But the spoiler doesn't always work alone; sometimes it needs a little help. That's why the spoiler can be part of an <strong>accordion</strong>. To do this, you just need to use several spoilers with the <code>name</code> attribute and the same name:</p>
+
+      <details class="typo-spoiler" name="spoiler1">
+        <summary>Reveal the first segment</summary>
+        <p>Click on another segment to dive deeper 🐋</p>
+      </details>
+      <details class="typo-spoiler" name="spoiler1">
+        <summary>Another segment...  </summary>
+        <p>This segment is totally different. 🦄 It's like discovering a new world!</p>
+      </details>
+
+      <p>Accordions are a great way to present information without overwhelming the reader. They allow users to expand and collapse sections of content as needed.</p>
+
+      <blockquote>Accordions are created using the <code>&lt;details></code> tag with the <code>.typo-spoiler</code> class.</blockquote>
+
+      <h2>Enhancing Layouts</h2>
+
+      <div class="typo-columns">
+        <p>The columns improve content presentation by creating structured layouts. Whether for text or media, they enhance readability and aesthetics.</p>
+
+        <p>On the other hand, the alignment of elements, is a resource widely used in news or for storytelling because of how great it is for illustrating what is being shown.</p>
+      </div>
+
+      <blockquote>Columns are created using the <code>.typo-columns</code> class in the <code>&lt;div></code> tag.</blockquote>
+
+      <h2>Diana's Discovery: A Glimpse into the Unknown</h2>
+
+      <p>The perfectly circular ring of light appeared out of nowhere, tearing through the starry mantle above the mountains while Diana held her breath, petrified next to her pickup truck in that remote clearing. There was no sound, no vibration, just an imposing presence that seemed to observe her with an ancient and <em>inscrutable</em> intelligence.</p>
+
+      <figure class="typo-align-right">
+        <img src="assets/image.webp" alt="ufo" width="340" height="426" loading="lazy">
+        <figcaption>Photo by <a href="https://www.pexels.com/es-es/foto/montanas-galaxy-galaxia-circulo-9737557/">Jakob Rosen</a> on Pexels</figcaption>
+      </figure>
+
+      <p>Diana had driven to this secluded place following coordinates found in an enigmatic coded message that had been appearing on her computer for weeks, a message that all experts considered impossible to decipher but that she, an astrophysicist marginalized for her theories about <u>interdimensional civilizations</u>, had managed to interpret.</p>
+
+      <p>The luminous circle pulsed three times and suddenly Diana's mind was flooded with symbols and equations that rewrote everything humanity believed it knew about space-time; <s>forbidden</s> knowledge that advanced civilizations had deliberately hidden from Earth for millennia, considering us too primitive and dangerous.</p>
+
+      <blockquote>Alignment is created using the <code>.typo-align-right</code>, <code>.typo-align-left</code>, <code>.typo-align-center</code> and <code>.typo-align-full</code> class in any block element.</blockquote>
+
+      <h2>Galleries: A Visual Journey</h2>
+      <p>Galleries are a fantastic way to showcase images in a structured format. They allow users to explore visual content without overwhelming them with too many images at once:</p>
+
+      <div class="typo-gallery">
+        <figure>
+          <img loading="lazy" src="assets/gallery-1.webp" width="400" height="300">
+          <figcaption>Figure 1</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="assets/gallery-2.webp" width="400" height="300">
+          <figcaption>Figure 2</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="assets/gallery-3.webp" width="400" height="300">
+          <figcaption>Figure 3</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="assets/gallery-4.webp" width="400" height="300">
+          <figcaption>Figure 4</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="assets/gallery-5.webp" width="400" height="300">
+          <figcaption>Figure 5</figcaption>
+        </figure>
+      </div>
+
+      <blockquote>Galleries are created using the <code>.typo-gallery</code> class in the <code>&lt;div></code> tag.</blockquote>
+
+      <hr>
+
+      <h2>License</h2>
+      <p>Typography is licensed under the MIT License. You can use it freely in your projects, but please keep the attribution to the original authors.</p>
+
+    </article>
+  </div>
 </body>
 
 </html>
