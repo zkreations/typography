@@ -1,6 +1,6 @@
 {
   "name": "@zkreations/typography",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Enhance typography effortlessly for any vanilla HTML you can’t edit.",
   "files": [
     "scss/**/*.scss",
