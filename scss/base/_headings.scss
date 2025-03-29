@@ -2,6 +2,8 @@
   // All headings
   :where(h1, h2, h3, h4, h5, h6) {
     margin-bottom: var(--typo-heading-spacing);
+    font-weight: 500;
+    line-height: 1.5;
   }
 
   // Individual headings
