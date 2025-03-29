@@ -1,11 +1,13 @@
-
 .typography {
-  // Images
   :where(pre:has(>code)) {
     border-inline-start: 3px solid var(--typo-border-color);
     background-color: var(--typo-code-background);
     padding: var(--typo-code-padding);
     font-size: 1rem;
     overflow-x: auto;
+  }
+
+  :where(code) {
+    background: var(--typo-code-background);
   }
 }
